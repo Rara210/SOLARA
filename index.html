@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SOLARIS — Simulation holographique du système solaire</title>
+<meta name="description" content="Pilotez une simulation 3D holographique du système solaire : survolez les huit planètes, basculez entre hologramme et rendu réaliste.">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head><body>
+<canvas id="gl" aria-label="Simulation 3D du système solaire"></canvas>
+<div id="tags"></div>
+<div id="intro"><p>SOLARIS</p><small>Calibration du projecteur holographique…</small><i></i></div>
+<header><b>SOLARIS</b><span>Simulation du système solaire</span><button id="mode">Mode : hologramme</button></header>
+<nav id="list" aria-label="Planètes"></nav>
+<section id="panel"><small id="kind">Vue d'ensemble</small><h1 id="name">Le système solaire</h1><p id="desc">Une étoile, huit planètes, une ceinture d'astéroïdes. Choisissez un monde pour y voler, ou faites glisser pour orbiter autour de la scène.</p><dl id="stats"></dl></section>
+<footer><button id="home">Vue système</button><span>Glisser : orbiter · Molette : zoom · ← → : changer de monde</span></footer>
+<script type="module" src="script.js"></script>
+</body></html>
