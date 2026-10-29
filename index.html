@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050712">
+  <meta name="description" content="Explorez les huit planètes du système solaire en 3D. Comparez leurs dimensions, atmosphères, températures et orbites.">
+  <title>SOLARIS — Voyage au cœur du système solaire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="logo" href="#accueil"><span class="logo-symbol">✳</span><span>SOLARIS<small>ATLAS DU SYSTÈME SOLAIRE</small></span></a>
+    <nav id="mainNav"><a class="nav-link active" href="#accueil">Accueil</a><a class="nav-link" href="#planetes">Les planètes</a><a class="nav-link" href="#comparateur">Comparateur</a><a class="nav-link" href="#mission">Explorer</a></nav>
+    <a class="top-cta" href="#planetes">Commencer le voyage <span>↗</span></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-stars" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="overline"><span class="pulse"></span> UN VOYAGE À L'ÉCHELLE COSMIQUE</div>
+        <h1>Huit mondes.<br><em>Une infinité</em><br>de merveilles.</h1>
+        <p>Du monde brûlant de Mercure aux profondeurs glacées de Neptune, découvrez les planètes qui composent notre voisinage cosmique.</p>
+        <div class="hero-actions"><a class="btn btn-light" href="#planetes">Explorer les planètes <span>↗</span></a><a class="btn-quiet" href="#comparateur"><span class="play-icon">▶</span> Comparer les dimensions</a></div>
+        <div class="hero-note"><span class="note-line"></span><span>NOTRE SYSTÈME SOLAIRE</span><span class="note-sep">/</span><span>4,6 MILLIARDS D'ANNÉES</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-orbit orbit-c"></div>
+        <div class="hero-planet" role="img" aria-label="Illustration artistique d'une planète bleue"></div>
+        <div class="planet-glow"></div>
+        <div class="hero-label label-one"><span>01</span><i></i><b>UNIVERS OBSERVABLE</b></div>
+        <div class="hero-label label-two"><span>8</span><i></i><b>PLANÈTES</b></div>
+        <div class="hero-caption">UNE PETITE PARTIE DE L'IMMENSITÉ <span>— 001 / 008</span></div>
+      </div>
+      <div class="hero-bottom"><div><strong>4,6 Md</strong><span>années d'histoire</span></div><div><strong>8</strong><span>planètes reconnues</span></div><div><strong>1</strong><span>étoile au centre</span></div><div class="scroll-cue">FAITES DÉFILER <span>↓</span></div></div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="section-tag">01 — NOTRE VOISINAGE</div>
+      <div class="intro-grid"><h2>Un système.<br><em>Des mondes uniques.</em></h2><div class="intro-description"><p>Chaque planète raconte une histoire différente : des paysages rocheux, des tempêtes gigantesques, des anneaux de glace et des atmosphères que nous commençons à peine à comprendre.</p><p>Choisissez un monde, observez-le en 3D et explorez ses caractéristiques essentielles.</p></div></div>
+    </section>
+
+    <section class="planet-explorer section" id="planetes">
+      <div class="section-heading"><div><div class="section-tag">02 — ATLAS PLANÉTAIRE</div><h2>Choisissez votre <em>destination.</em></h2></div><div class="heading-note">8 MONDES À EXPLORER <span>✳</span></div></div>
+      <div class="planet-layout">
+        <aside class="planet-list" id="planetList" aria-label="Choisir une planète">
+          <button class="planet-option selected" data-planet="earth"><span class="planet-index">03</span><span class="planet-dot earth-dot"></span><span class="planet-option-name">Terre<small>Le monde vivant</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="mercury"><span class="planet-index">01</span><span class="planet-dot mercury-dot"></span><span class="planet-option-name">Mercure<small>Le monde extrême</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="venus"><span class="planet-index">02</span><span class="planet-dot venus-dot"></span><span class="planet-option-name">Vénus<small>La planète brûlante</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="mars"><span class="planet-index">04</span><span class="planet-dot mars-dot"></span><span class="planet-option-name">Mars<small>La planète rouge</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="jupiter"><span class="planet-index">05</span><span class="planet-dot jupiter-dot"></span><span class="planet-option-name">Jupiter<small>Le géant gazeux</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="saturn"><span class="planet-index">06</span><span class="planet-dot saturn-dot"></span><span class="planet-option-name">Saturne<small>Le seigneur des anneaux</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="uranus"><span class="planet-index">07</span><span class="planet-dot uranus-dot"></span><span class="planet-option-name">Uranus<small>Le monde incliné</small></span><span class="option-arrow">↗</span></button>
+          <button class="planet-option" data-planet="neptune"><span class="planet-index">08</span><span class="planet-dot neptune-dot"></span><span class="planet-option-name">Neptune<small>La frontière bleue</small></span><span class="option-arrow">↗</span></button>
+        </aside>
+        <div class="planet-stage">
+          <div class="stage-top"><span id="stageCode">PLANÈTE TERRE / 03</span><span class="live-indicator"><i></i> APERÇU 3D</span></div>
+          <div class="three-wrap" id="planetCanvasWrap"><div class="planet-fallback" id="planetFallback"></div><div class="loading-label" id="loadingLabel">INITIALISATION DU MODÈLE 3D…</div></div>
+          <div class="stage-bottom"><div><span class="mini-label">DISTANCE MOYENNE DU SOLEIL</span><strong id="stageDistance">149,6 millions de km</strong></div><div class="drag-hint">FAITES TOURNER <span>↻</span></div></div>
+          <div class="stage-corner corner-tl"></div><div class="stage-corner corner-br"></div>
+        </div>
+        <div class="planet-details">
+          <div class="detail-kicker" id="planetType">PLANÈTE ROCHEUSE</div><h3 id="planetName">La Terre<span>.</span></h3><p id="planetDesc">Notre oasis bleue. La seule planète connue à abriter une vie foisonnante, protégée par une atmosphère et un champ magnétique remarquables.</p>
+          <div class="detail-stats"><div><span>DIAMÈTRE</span><strong id="planetDiameter">12 742 <small>km</small></strong></div><div><span>TEMPÉRATURE MOY.</span><strong id="planetTemp">15 <small>°C</small></strong></div><div><span>DURÉE DU JOUR</span><strong id="planetDay">23 h 56</strong></div><div><span>ANNÉE</span><strong id="planetYear">365,25 <small>jours</small></strong></div></div>
+          <div class="detail-footer"><span id="planetMoons">1 satellite naturel</span><button class="detail-more" id="moreFacts">Fiche complète <span>↗</span></button></div>
+        </div>
+      </div>
+      <div class="planet-facts-expanded" id="expandedFacts" hidden><div><span>COMPOSITION</span><strong id="factComposition">Roche, fer et silicates</strong></div><div><span>GRAVITÉ</span><strong id="factGravity">9,81 m/s²</strong></div><div><span>ATMOSPHÈRE</span><strong id="factAtmosphere">Azote et oxygène</strong></div><div><span>PARTICULARITÉ</span><strong id="factFeature">Eau liquide en surface</strong></div></div>
+    </section>
+
+    <section class="compare-section section" id="comparateur">
+      <div class="compare-heading"><div class="section-tag">03 — À LA MÊME ÉCHELLE</div><h2>La taille, <em>en perspective.</em></h2><p>Deux planètes côte à côte. Une différence que les chiffres seuls ne peuvent pas raconter.</p></div>
+      <div class="compare-panel">
+        <div class="compare-controls"><label>PREMIER MONDE<select id="planetA"><option value="earth">Terre</option><option value="mercury">Mercure</option><option value="venus">Vénus</option><option value="mars">Mars</option><option value="jupiter">Jupiter</option><option value="saturn">Saturne</option><option value="uranus">Uranus</option><option value="neptune">Neptune</option></select></label><span class="versus">VS</span><label>SECOND MONDE<select id="planetB"><option value="jupiter">Jupiter</option><option value="earth">Terre</option><option value="mercury">Mercure</option><option value="venus">Vénus</option><option value="mars">Mars</option><option value="saturn">Saturne</option><option value="uranus">Uranus</option><option value="neptune">Neptune</option></select></label><button class="swap-button" id="swapPlanets" aria-label="Inverser les planètes">⇄</button></div>
+        <div class="comparison-universe"><div class="comparison-starfield"></div><div class="compare-planet-slot"><div class="compare-planet planet-a" id="compareVisualA"><div class="compare-sphere earth-sphere"></div></div><span id="compareNameA">TERRE</span><small id="compareDiameterA">12 742 KM</small></div><div class="comparison-divider"><span>DIAMÈTRE<br>RÉEL</span><i></i></div><div class="compare-planet-slot"><div class="compare-planet planet-b" id="compareVisualB"><div class="compare-sphere jupiter-sphere"></div></div><span id="compareNameB">JUPITER</span><small id="compareDiameterB">139 820 KM</small></div><div class="scale-caption">VISUALISATION À L'ÉCHELLE RELATIVE <span>•</span> DIAMÈTRES MOYENS</div></div>
+        <div class="compare-result"><div class="ratio-number"><strong id="ratioNumber">10,97×</strong><span>plus large</span></div><p id="ratioText">Jupiter pourrait contenir près de 1 321 Terres en volume. Son diamètre est environ 11 fois celui de notre planète.</p><div class="ratio-bar-wrap"><div class="ratio-bar"><span id="ratioBar"></span></div><div class="ratio-ends"><span id="ratioSmall">TERRE</span><span id="ratioLarge">JUPITER</span></div></div></div>
+      </div>
+      <div class="compare-footnote">Les diamètres sont à l'échelle relative. Les distances orbitales ne sont pas représentées à la même échelle.</div>
+    </section>
+
+    <section class="mission-section section" id="mission">
+      <div class="mission-backdrop"></div><div class="mission-copy"><div class="section-tag">04 — AU-DELÀ DE L'HORIZON</div><h2>Le cosmos ne se<br>résume pas à <em>ce que l'on voit.</em></h2><p>Chaque réponse ouvre une nouvelle question. Continuez d'explorer, comparez les mondes et laissez votre curiosité choisir la prochaine destination.</p><a href="#planetes" class="btn btn-light">Repartir à l'exploration <span>↗</span></a></div><div class="mission-planet"></div><div class="mission-caption">FIN DU VOYAGE ? JAMAIS. <span>∞</span></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="logo" href="#accueil"><span class="logo-symbol">✳</span><span>SOLARIS<small>ATLAS DU SYSTÈME SOLAIRE</small></span></a><p>Une fenêtre sur les mondes qui nous entourent.</p><div class="footer-links"><a href="#planetes">Planètes</a><a href="#comparateur">Comparateur</a><a href="#accueil">Retour en haut ↑</a></div><div class="footer-bottom"><span>© 2026 SOLARIS — PROJET ÉDUCATIF INDÉPENDANT</span><span>FAIT POUR LES CURIEUX. PENSÉ POUR LE COSMOS.</span></div></footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
